@@ -1,14 +1,312 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  font-size:12px;
+  color:#4E4F5A;
+}
+.container-fluid{
+  padding:0;
+}
+/* BUTTONS */
+.btn{
+  border: 1px solid #004056;
+  height:2.5rem;
+}
+.searchbox .btn{
+  background:#5CF892;
+  color:black;
+}
+.btn-rows{
+  justify-content:space-around;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+#btn-cation{
+  background:#F6EE00;
+}
+#btn-return{
+  background:#004056;
+}
+
+/* NAVBAR */
+.navbar{
+  height:8rem;
+}
+#city-state-header{
+  font-size:2rem;
+}
+#mayor{
+  font-size:1.2rem;
+}
+.navbar-logo img{
+  height:7rem;
+}
+/* SUB-BAR */
+.sub-bar {
+  background-color: #014054;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 1.5% 0;
+  }
+  /* SUB-BAR - BULLET POINTS */
+.bullets {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.bullets:before {
+  border-top: 2px solid #dfdfdf;
+  content:"";
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width:60%;
+}
+.bullets {
+  width: 45%;
+  display: inline-flex;
+  justify-content: space-evenly;
+}
+.bullets .bullet {
+  width: 50px;
+  height: 50px;
+  border: 2px solid white;
+  background: #004056;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+}
+.bullet.active{
+  background:lightgreen;
+  color:black;
+  border: 2px solid black;
+}
+/* MAIN */
+.topLiner{
+  justify-content:center;
+  font-size:2.5rem;
+  margin:4%;
+}
+/* MAIN - PINKBOX */
+.pinkbox{
+  border-radius:1rem;
+  background: pink;
+  width:65%;
+  text-align:left;
+  padding:1.5rem;
+  margin-left:-1.6rem
+}
+.pinkbox a{
+  color:#4E4F5A;
+  font-size:.9rem;
+}
+/* MAIN - Searchbox*/
+.searchbox{
+  text-align:center;
+  font-size:1rem;
+}
+#search{
+  width: 50%;
+}
+.form-control{
+  text-align: center;
+}
+.ticket img{
+  height: 24rem;
+  margin-bottom: 10%;
+  border: 1px solid black;
+}
+/* MAIN - RESULTS PAGE*/
+.result{
+  border: 1px black solid;
+  padding: 5%;
+}
+.resultsbox{
+  padding:0;
+}
+.results-box-left{
+  border: 1px solid;
+}
+#tick-left-1{
+  padding-right: 0;
+    padding-left: 0;
+}
+#tick-left-info{
+  width: 90%;
+  margin: auto;
+}
+.results-box-left .col-1{
+display: flex;
+align-items: center;
+
+}
+
+table{
+  background:lightgray;
+  color:black;
+  border:1px solid black;
+  width: 100%;
+}
+tr {
+  border-bottom:1px solid black;
+}
+td{
+  padding:1.5%;
+}
+th, td{
+  font-size:1rem;
+  border-right:1px solid;
+}
+.p3line{
+  font-size: .6rem;
+margin: 10%;
+}
+#mapimg{
+  height:10rem;
+  border:1px solid black;
+  width:100%;
+}
+.subnote{
+  margin:10% 0;
+  border: 1px solid black;
+}
+
+/* TICKET INFO BOX */
+.tick-info{
+  border: 1px black solid;
+  padding:3%;
+}
+/* Payment Options Tabs */
+section {
+  width: 100%;
+  background: #f1f1f1;
+  margin: auto;
+  color:black;
+}
+
+section a {
+  width: 33.3333%;
+  justify-content:center;
+  float: left;
+  background: #f1f1f1;
+  text-decoration: none;
+  padding-top:1rem;
+  display:inline-flex;
+  color:black;
+}
+section p {
+  margin-left:.5rem;
+}
+
+section div {
+  display: none;
+  height: 100%;
+  padding: 10px;
+  justify-content: center;
+}
+section a:nth-child(2){
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+#tab2 .row1{
+  justify-content:center;
+}
+#tab2 .row2{
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+#tab2 input{
+  width:30%;
+  margin-top:1%;
+  margin: auto;
+}
+#tab2 .btn{
+  border:none;
+  box-shadow: 2px 2px 2px;
+  width:25%;
+}
+.paypal-image{
+  background:green;
+  height: 3rem;
+  width: 3rem;
+  color:black;
+  display:flex;
+}
+section div:target {
+  display: block;
+  justify-content: center;
+}
+
+.confirmbox{
+  border:1px solid black;
+  padding: 8%;
+}
+
+/* PAYMENT #2 */
+
+
+		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+      border: 1px solid;
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+      border-right:1px solid;
+		}
+
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+
+		.tab-content{
+			display: none;
+			background: #ededed;
+			padding: 15px;
+      padding-bottom: 5%;
+      border-left:1px solid black;
+      border-right:1px solid black;
+      border-bottom:1px solid black;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+.debt-cred{
+justify-content:center;
+}
+.paypal{
+  margin-top:2%;
+  justify-content:center;
+}
+.form-control{
+  width:51%;
+  text-align:center;
+  margin-top:2%;
+}
+
+/* Footer */
+.footer{
+  height:4rem;
+  background-color: #014054;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.footer a{
+  color: white;
+  font-size: 1rem;
+  border-bottom: 2px solid white;
+  text-decoration: none;
 }
