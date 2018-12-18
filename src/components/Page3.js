@@ -48,6 +48,7 @@ const Page3 = () => (
          <div className="row d-block">
            <span className="text-left"><h3>&#x25A0; Payment Options</h3></span>
            <p className="text-left">Select the your payment method and enter the information below </p>
+           
          </div>
          <div className="row mt-2">
            <div className="text-left">
