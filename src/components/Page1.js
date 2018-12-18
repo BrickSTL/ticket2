@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-const Page1 = () => (
-  <div>
+
+
+class Page1 extends Component {
+  render(){
+    return (
     <div id='page1' className="container-fluid">
       <div className="row topLiner">
         <span>- Find Your Ticket -</span>
@@ -9,10 +12,10 @@ const Page1 = () => (
       <div className='row searchbox mx-0'>
         <div className="col pinkbox-space">
           <div className="pinkbox">
-            <a href='#'><li>Parking Safety Tips</li></a>
-            <a href='#'><li>City Parking Police</li></a>
-            <a href='#'><li>Downtown Parking Map</li></a>
-            <a href='#'><li>Boot Removal/Towing Info</li></a>
+            <li>Parking Safety Tips</li>
+            <li>City Parking Police</li>
+            <li>Downtown Parking Map</li>
+            <li>Boot Removal/Towing Info</li>
           </div>
         </div>
         <div className="col-5  enterticket">
@@ -23,7 +26,7 @@ const Page1 = () => (
             </div>
           </form>
           <div className="control-box">
-
+            <button onClick={this.toggleVisibility}>Next</button>
           </div>
           <div className="subnote">
             <div className="row pt-2 m-0">
@@ -41,7 +44,8 @@ const Page1 = () => (
         </div>
       </div>
     </div>
-  </div>
-)
+    )
+  }
+}
 
 export default Page1

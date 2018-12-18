@@ -1,10 +1,11 @@
 import React from 'react';
+import $ from 'jquery';
 
 const Footer = () => (
   <div class="footer">
-      <a href="#">Home</a>
-      <a href="#">Assitance</a>
-      <a href="#">Contact</a>
+      <p>Home</p>
+      <p>Assitance</p>
+      <p>Contact</p>
   </div>
 )
 
