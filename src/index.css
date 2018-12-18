@@ -249,7 +249,31 @@ section div:target {
 
 /* PAYMENT #2 */
 
+.tabs {
+border: 1px solid #e5e5e5;
+}
 
+.tabs__labels {
+margin: 0;
+padding: 0;
+}
+.tabs__labels li{
+display:inline-block;
+}
+.tabs__labels li a {
+padding: 8px 12px;
+display: block;
+color: #444;
+text-decoration: none;
+border-bottom: 2px solid #f5f5f5;
+text-transform:capitalize;
+}
+.tabs__content {
+padding: 25px;
+}
+.active {
+background:#ececff;
+}
 		ul.tabs{
 			margin: 0px;
 			padding: 0px;

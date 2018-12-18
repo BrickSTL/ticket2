@@ -1,11 +1,15 @@
 import React, {Component} from 'react';
 import Page1 from './Page1';
+import Tabs from './Tabs.js'
+
+
+
 
 class Main extends Component {
   constructor(props){
     super(props);
     this.state= {
-      count:1
+      count:3
     }
     this.handleVisibility1 = this.handleVisibility1.bind(this)
   }
@@ -163,38 +167,22 @@ class Main extends Component {
                   <span className="text-left"><h3>&#x25A0; Payment Options</h3></span>
                   <p className="text-left">Select the your payment method and enter the information below </p>
                 </div>
-                <div className="row mt-2">
-                  <div className="text-left">
-                    <span><h3>&#x25A0; Finalize</h3></span>
-                    <p>Select the your payment method and enter the information below </p>
-                  </div>
-                  <table style={{width:'100%'}}>
-                    <thead>
-                      <tr>
-                        <th>Ticket Number</th>
-                        <th>Date Issued</th>
-                        <th>Fines</th>
-                        <th>Total Amount</th>
-                        <th>Payment</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>NWES01DMS</td>
-                        <td>03/05/2018</td>
-                        <td>$15.00</td>
-                        <td>$15.00</td>
-                        <td>Visa XXX-1234</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div style={{height:'10rem'}}>
-                    <p className="mt-5">Please enter an email address below. We will send you a confirmation email once the payment is processed.</p>
-                    <input className="form-control w-100" placeholder="Enter Email Address" />
-                    <div className="col mt-2 text-left p-0">
-                      <input id="box1" type="checkbox" />
-                      <label for="box1">I accept the <a href="#">Terms and Conditions</a> </label>
-                    </div>
+                <Tabs/>
+                <ul className="tabs row">
+                  <li className="tab-link current col" data-tab="tab-1">
+                    <span className="bullet">BULLET 1</span>
+                  </li>
+                  <li className="tab-link current col" data-tab="tab-1">
+                    <span className="bullet">BULLET 2</span>
+                  </li>
+                  <li className="tab-link current col" data-tab="tab-1">
+                    <span className="bullet">BULLET 3</span>
+                  </li>
+                </ul>
+                <div id="tab-1" className="tab-content">
+                  <br/>
+                  <div className="row paypal m-0">
+                    <img src='https://freeiconshop.com/wp-content/uploads/edd/creditcard-flat.png'/>
                   </div>
                 </div>
                 <div className="row btn-rows mx-0 mb-5 mt-5">
