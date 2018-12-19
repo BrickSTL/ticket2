@@ -43,7 +43,7 @@ class Main extends Component {
               </div>
             </form>
             <div className="control-box">
-              <button onClick={this.handleVisibility1}  id="confirm-ticket"className="btn btn-primary px-5">Next</button>
+              <button onClick={this.handleVisibility1} className="btn confirm-ticket px-5">Next</button>
             </div>
             <div class="subnote">
         <div className="row pt-2 m-0">
@@ -111,7 +111,7 @@ class Main extends Component {
                   </div>
                 </div>
                 <div className="row btn-rows mb-5 mt-5">
-                  <button onClick={this.handleVisibility1}  id="confirm-ticket"className="btn btn-primary px-5"> Confirm </button>
+                  <button onClick={this.handleVisibility1} className="btn confirm-ticket px-5"> Confirm </button>
                   <a href="./index.html"><div id="btn-cation"className="btn px-5">Search Again</div></a>
                 </div>
               </div>
@@ -213,7 +213,7 @@ class Main extends Component {
                   </div>
                 </div>
                 <div className="row btn-rows mx-0 mb-5 mt-5">
-                  <button onClick={this.handleVisibility1} id="confirm-final" className="btn px-5 btn-primary"> Confirm </button>
+                  <button onClick={this.handleVisibility1} className="btn px-5 confirm-ticket"> Confirm </button>
                   <a href="./index.html"><div id="btn-cation"class="btn px-5">Cancel</div></a>
                 </div>
               </div>
