@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/BrickSTL/ticket2/precache-manifest.550a676120ba30671b82fb66a3b96c39.js"
+  "/BrickSTL/ticket2/precache-manifest.62778c939f1239b52fb430d369480d44.js"
 );
 
 workbox.clientsClaim();
