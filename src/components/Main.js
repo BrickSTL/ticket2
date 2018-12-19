@@ -9,7 +9,7 @@ class Main extends Component {
   constructor(props){
     super(props);
     this.state= {
-      count:3
+      count:1
     }
     this.handleVisibility1 = this.handleVisibility1.bind(this)
   }
@@ -45,11 +45,22 @@ class Main extends Component {
             <div className="control-box">
               <button onClick={this.handleVisibility1}  id="confirm-ticket"className="btn btn-primary px-5">Next</button>
             </div>
+            <div class="subnote">
+        <div className="row pt-2 m-0">
+          <div className="col-2">
+            <i className="fa fa-phone" style={{fontSize:"70px"}}></i>
+          </div>
+          <div className="col">
+            <p>Can't locate your ticket?</p>
+            <p>Call (800)-555-5555 to speak with a local ticket agent</p>
+          </div>
+        </div>
+      </div>
           </div>
           <div className="col ticket">
           </div>
         </div>
-          <h1>Page # {this.state.count}</h1>
+          {/*<h1>Page # {this.state.count}</h1>*/}
         </div>
       )
     }
@@ -77,7 +88,7 @@ class Main extends Component {
                         <span id="tick-left-1">Ticket XXX-XXX was issued to license plate number XXX-XXX on 01/02/18.</span>
                       </div>
                     </div>
-                    <div className="row form2 mt-4 mx-0">
+                    <div className="row form2 my-4 mx-0">
                       <table>
                         <thead>
                           <tr>
@@ -105,7 +116,7 @@ class Main extends Component {
                 </div>
               </div>
               <div className="col text-center ">
-                <img className='tick-sig-box' src="./images/city-flag.png" />
+                <div class="side-flag"></div>
                 <div>
                   <img className='tick-sig-name'/>
                 </div>
@@ -114,7 +125,7 @@ class Main extends Component {
             </div>
 
           </div>
-          <h1>Page # {this.state.count}</h1>
+          {/*<h1>Page # {this.state.count}</h1>*/}
         </div>
       )
     }
@@ -131,36 +142,37 @@ class Main extends Component {
               <div className="col-7 resultsbox">
                 <div className="row">
                   <span><h3>&#x25A0; Ticket Information</h3></span>
-                  <span className="text-left">Below is the ticket(s) you have selected. Please confirm you are playing for the correct ticket(s).</span>
+                  <br/>
+                    <span className="text-left w-100">Below is the ticket(s) you have selected. Please confirm you are playing for the correct ticket(s).</span>
                   <div className="row mx-1 my-2">
-                      <div className="col-5 tick-info results-box-left">
-                        <div className="row">
-                          <span id="tick-left-info">Ticket XXX-XXX was issued to license plate number XXX-XXX on 01/02/18.</span>
-                        </div>
-                        <div className="row">
-                          <table style={{width:'100%',marginTop:'5%'}}>
-                            <thead>
-                              <tr>
-                                <th className="p3line">Ticket Number</th>
-                                <th className="p3line">Date Issued</th>
-                                <th className="p3line">Fines</th>
-                                <th className="p3line">Total Amount</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td className="p3line">NWES01DMS</td>
-                                <td className="p3line">03/05/2018</td>
-                                <td className="p3line">$15.00</td>
-                                <td className="p3line">$15.00</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+                    <div className="col-5 tick-info results-box-left">
+                      <div className="row">
+                        <span id="tick-left-info">Ticket XXX-XXX was issued to license plate number XXX-XXX on 01/02/18.</span>
                       </div>
-                      <div className="col-5 results-box-right">
-                        <img id='mapimg'src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" />
+                      <div className="row">
+                        <table style={{width:'100%',marginTop:'5%'}}>
+                          <thead>
+                            <tr>
+                              <th className="p3line">Ticket Number</th>
+                              <th className="p3line">Date Issued</th>
+                              <th className="p3line">Fines</th>
+                              <th className="p3line">Total Amount</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td className="p3line">NWES01DMS</td>
+                              <td className="p3line">03/05/2018</td>
+                              <td className="p3line">$15.00</td>
+                              <td className="p3line">$15.00</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
+                    </div>
+                    <div className="col-5 results-box-right">
+                      <img id='mapimg'src="https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg" />
+                    </div>
                   </div>
                 </div>
                 <div className="row d-block">
@@ -168,11 +180,36 @@ class Main extends Component {
                   <p className="text-left">Select the your payment method and enter the information below </p>
                 </div>
                 <Tabs/>
-              
-                <div id="tab-1" className="tab-content">
-                  <br/>
-                  <div className="row paypal m-0">
-                    <img src='https://freeiconshop.com/wp-content/uploads/edd/creditcard-flat.png'/>
+                <div class="row mt-2">
+                  <div class="text-left">
+                    <span><h3>&#x25A0; Finalize</h3></span>
+                    <p>Select the your payment method and enter the information below </p>
+                  </div>
+                  <table style={{width:"100%"}}>
+                    <thead>
+                      <tr>
+                        <th>Ticket Number</th>
+                        <th>Date Issued</th>
+                        <th>Fines</th>
+                        <th>Total Amount</th>
+                        <th>Payment</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>NWES01DMS</td>
+                        <td>03/05/2018</td>
+                        <td>$15.00</td>
+                        <td>$15.00</td>
+                        <td>Visa XXX-1234</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p className="mt-5">Please enter an email address below. We will send you a confirmation email once the payment is processed.</p>
+                  <input className="form-control w-100" placeholder="Enter Email Address"/>
+                  <div className="col mt-2 text-left p-0">
+                    <input id="box1" type="checkbox" />
+                    <label className="ml-1" for="box1">I accept the <a href="#">Terms and Conditions</a> </label>
                   </div>
                 </div>
                 <div className="row btn-rows mx-0 mb-5 mt-5">
@@ -184,7 +221,7 @@ class Main extends Component {
               </div>
             </div>
           </div>
-          <h1>Page # {this.state.count}</h1>
+          {/*<h1>Page # {this.state.count}</h1>*/}
         </div>
       )
     }
@@ -230,7 +267,7 @@ class Main extends Component {
                </div>
               </div>
               <div className="col text-center">
-                <img src="./images/city-flag.png" style={{height:'8rem', width:'11rem', marginTop:'5%', border:'2px'}} />
+                <div class="side-flag"></div>
                 <div>
                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Signature_of_Willem-Alexander.png" style={{height:'15%', width:'33%', marginTop:'5%'}}/>
                 </div>
@@ -238,7 +275,7 @@ class Main extends Component {
               </div>
             </div>
           </div>
-          <h1>Page # {this.state.count}</h1>
+          {/*<h1>Page # {this.state.count}</h1>*/}
         </div>
       )
     }

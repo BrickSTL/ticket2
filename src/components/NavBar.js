@@ -8,9 +8,9 @@ const NavBar = () => (
         <br/>
         <span id="mayor">Mayor Mike Rogers</span>
       </div>
-      <div className="navbar-logo">
-        
-
+      <div className='navbar-logo'>
+        <div id='seal'>
+        </div>
       </div>
     </div>
   </nav>
