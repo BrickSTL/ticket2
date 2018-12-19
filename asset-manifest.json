@@ -1,14 +1,14 @@
 {
-  "main.css": "/BrickSTL/ticket2/static/css/main.ce3c1f7b.chunk.css",
-  "main.js": "/BrickSTL/ticket2/static/js/main.ed4779c8.chunk.js",
-  "main.js.map": "/BrickSTL/ticket2/static/js/main.ed4779c8.chunk.js.map",
-  "static/js/1.2cc47f83.chunk.js": "/BrickSTL/ticket2/static/js/1.2cc47f83.chunk.js",
-  "static/js/1.2cc47f83.chunk.js.map": "/BrickSTL/ticket2/static/js/1.2cc47f83.chunk.js.map",
-  "runtime~main.js": "/BrickSTL/ticket2/static/js/runtime~main.97386940.js",
-  "runtime~main.js.map": "/BrickSTL/ticket2/static/js/runtime~main.97386940.js.map",
-  "static/css/main.ce3c1f7b.chunk.css.map": "/BrickSTL/ticket2/static/css/main.ce3c1f7b.chunk.css.map",
-  "static/media/index.css": "/BrickSTL/ticket2/static/media/city-flag.5e673065.png",
-  "index.html": "/BrickSTL/ticket2/index.html",
-  "precache-manifest.62778c939f1239b52fb430d369480d44.js": "/BrickSTL/ticket2/precache-manifest.62778c939f1239b52fb430d369480d44.js",
-  "service-worker.js": "/BrickSTL/ticket2/service-worker.js"
+  "main.css": "/ticket2/static/css/main.1fcd34c9.chunk.css",
+  "main.js": "/ticket2/static/js/main.5b67e4ba.chunk.js",
+  "main.js.map": "/ticket2/static/js/main.5b67e4ba.chunk.js.map",
+  "static/js/1.2cc47f83.chunk.js": "/ticket2/static/js/1.2cc47f83.chunk.js",
+  "static/js/1.2cc47f83.chunk.js.map": "/ticket2/static/js/1.2cc47f83.chunk.js.map",
+  "runtime~main.js": "/ticket2/static/js/runtime~main.4dbb57af.js",
+  "runtime~main.js.map": "/ticket2/static/js/runtime~main.4dbb57af.js.map",
+  "static/css/main.1fcd34c9.chunk.css.map": "/ticket2/static/css/main.1fcd34c9.chunk.css.map",
+  "static/media/index.css": "/ticket2/static/media/city-flag.5e673065.png",
+  "index.html": "/ticket2/index.html",
+  "precache-manifest.15b12a2ea841828702e0300d8832633d.js": "/ticket2/precache-manifest.15b12a2ea841828702e0300d8832633d.js",
+  "service-worker.js": "/ticket2/service-worker.js"
 }
