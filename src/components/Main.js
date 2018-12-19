@@ -168,17 +168,7 @@ class Main extends Component {
                   <p className="text-left">Select the your payment method and enter the information below </p>
                 </div>
                 <Tabs/>
-                <ul className="tabs row">
-                  <li className="tab-link current col" data-tab="tab-1">
-                    <span className="bullet">BULLET 1</span>
-                  </li>
-                  <li className="tab-link current col" data-tab="tab-1">
-                    <span className="bullet">BULLET 2</span>
-                  </li>
-                  <li className="tab-link current col" data-tab="tab-1">
-                    <span className="bullet">BULLET 3</span>
-                  </li>
-                </ul>
+              
                 <div id="tab-1" className="tab-content">
                   <br/>
                   <div className="row paypal m-0">

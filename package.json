@@ -2,7 +2,7 @@
   "name": "ticket2",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://github.com/BrickSTL/ticket2",
+  "homepage": "https://github.com/BrickSTL/ticket2",
   "dependencies": {
     "jquery": "^3.3.1",
     "react": "^16.6.1",
